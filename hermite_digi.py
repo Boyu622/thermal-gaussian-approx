@@ -2,7 +2,6 @@ import numpy as np
 from numpy import kron
 from scipy.linalg import expm
 from scipy.special import hermite
-from scipy.integrate import quad
 
 #initialize digitization, parameter in H and temperature
 
