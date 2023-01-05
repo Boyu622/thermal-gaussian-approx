@@ -77,9 +77,13 @@ entropy_gapprox = EntS_Gapprox_2by2diag(xvar_exact,pvar_exact)
 print("exact entropy",entropy_exact)
 print("gaussian approximation entropy",entropy_gapprox)
 
+#gmm = 0.03
+#gpm = 0.07
+#gfourth = 0.087
 gmm = 0.1
 gpm = 0.1
 gfourth = 0.0678
+
 HM_QHO = gmm * MM.dot(MM) + gpm * PM
 HM_forth = HM_QHO + gfourth * MM.dot(MM).dot(MM).dot(MM)
 density_matrix_forth = rho_can(beta, HM_forth)
